@@ -11,9 +11,7 @@
 
 /* ---- Base Rules ---- */
 /*Added smooth scroll behavior to the page */
-html {
-    scroll-behavior: smooth;
-}
+
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
@@ -91,6 +89,7 @@ section {
     color: #fff;
     transition: ease 0.3s all;
 }
+
 
 /* Header Styles */
 .page__header {
