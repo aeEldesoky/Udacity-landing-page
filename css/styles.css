@@ -90,6 +90,17 @@ section {
     transition: ease 0.3s all;
 }
 
+a.menu-link {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+/* active link styling */
+a.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* Header Styles */
 .page__header {
