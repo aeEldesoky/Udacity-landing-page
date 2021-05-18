@@ -1,0 +1,9 @@
+// smooth scroll to section when link is clicked
+ function smoothScroll () {
+  for (let i = 0; i < sections.length; i++) {
+    menuLinks[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    sections[i].scrollIntoView({behavior : 'smooth'});
+});
+  }
+}

@@ -97,10 +97,13 @@ a.menu-link {
 }
 
 /* active link styling */
-a.active-link {
-    font-weight: bold;
-    text-decoration: underline;
+.active-link {
+    background-color: #333;
 }
+.active-link .menu__link {
+    color: white;
+}
+
 
 /* Header Styles */
 .page__header {
