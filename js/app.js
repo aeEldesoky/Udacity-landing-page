@@ -11,8 +11,8 @@ for (let i = 0; i < sections.length; i++) {
     newList.innerHTML = `<a href="#${sections[i].id}" class="menu__link"> ${myHeading} </a>`;
     const defaultActive= document.getElementsByClassName('menu__link')[0].parentElement.classList.add('active-link');
     
-    
 }
+
 //set active section styling
 function activeSection () {
   window.addEventListener('scroll', function() {
@@ -30,8 +30,28 @@ function activeSection () {
     
   });
   }
-   
- 
+
+ // active menu styling
+  function activeMenu () {
+  window.addEventListener('scroll', function() {
+    for (let i = 0; i < sections.length; i++) {
+     
+      const dataNav = sections[i].getAttribute('data-nav');
+      const myLink = document.querySelectorAll('a')[i].textContent;
+      const myList = document.querySelectorAll('li');
+      if (myLink === dataNav) {
+       myList[i].classList.add('active-link');  
+      }
+      else {
+        myList[i].classList.remove('active-link'); 
+      }
+       
+
+    }
+
+  });
+  
+}
 
 // smooth scroll to section when link is clicked
 function smoothScroll () {
@@ -46,4 +66,5 @@ function smoothScroll () {
 
 smoothScroll();
 activeSection();
+activeMenu();
 
