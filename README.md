@@ -1,5 +1,8 @@
 # Landing Page
 
+View this page live on GitHub Pages: 
+[Udacity Landing Page]( https://amira-ezz-eldin.github.io/Udacity-landing-page/)
+
 This project is a product landing page template. It can have as many sections as needed. The navigation menu updates dynamically when sections are added or removed. Active sections are highlighted. The page navigates smoothly when a link in the navigation menu is clicked.
 
 ## Getting Started
